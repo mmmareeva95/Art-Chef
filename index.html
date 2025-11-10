@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Chef - Ольга Дудник</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body>
+
+   <!-- Header -->
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                Art Chef - Ольга Дудник
+            </a>
+            
+            <button class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active">Главная</a></li>
+                    <li><a href="#about" class="nav__link">Обо мне</a></li>
+                    <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
+                    <li><a href="#services" class="nav__link">Услуги</a></li>
+                    <li><a href="#contact" class="nav__link">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        <span class="hero__title-line">Искусство</span>
+                        <span class="hero__title-line">в каждой</span>
+                        <span class="hero__title-line accent">сладости</span>
+                    </h1>
+                    <p class="hero__description">
+                        <i>"Хотите удивить гостей чем‑то особенным? Создаю уникальные десерты по вашим пожеланиям: от нежных капкейков до грандиозных тортов. Ваш праздник — мои авторские решения!"</i>
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#portfolio" class="btn btn--primary">
+                            <span>Смотреть работы</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero__visual">
+                    <div class="hero__image">
+                        <img src="img/heroimg12.jpg" alt="Фото Кондитера">
+                    </div>
+                    </div>
+                </div>
+            </div>
+   
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__image">
+                    <div class="image__frame">
+                        <img src="img/heroimg1.jpeg" alt="Кондитер">
+                    </div>
+                </div>
+                
+                <div class="about__text">
+                    <span class="section__label">Обо мне</span>
+                    <h2 class="section__title">Ольга Дудник</h2>
+                    <p class="about__description">
+                        Профессиональный кондитер с более чем 5-летним опытом. Окончила академию  кондитерского искусства Эксклюзив и Stanfood. Специализируюсь на создании авторских десертов, которые сочетают современные тенденции и классические техники.
+                    </p>
+                    
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__number">450+</span>
+                            <span class="stat__label">Счастливых клиентов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">600+</span>
+                            <span class="stat__label">Созданных десертов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">100%</span>
+                            <span class="stat__label">Натуральные ингредиенты</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Портфолио</span>
+                <h2 class="section__title">Мои работы</h2>
+                
+            </div>
+
+            <div class="portfolio__filters">
+                <button class="filter-btn active" data-filter="all">Все работы</button>
+                <button class="filter-btn" data-filter="wedding">Свадебные</button>
+                <button class="filter-btn" data-filter="kids">Детские</button>
+                <button class="filter-btn" data-filter="cupcakes">Капкейки</button>
+                <button class="filter-btn" data-filter="cakepops">Кейк-попсы</button>
+            </div>
+
+            <div class="portfolio__grid" id="portfolio-grid">
+                <!-- Portfolio items will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Услуги</span>
+                <h2 class="section__title">Что я предлагаю</h2>
+            </div>
+
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__header">
+                
+                        <h3 class="service-card__title">Свадебные торты</h3>
+                        <p class="service-card__price">от 8 000 ₽</p>
+                    </div>
+                    <p class="service-card__description">
+                        Элегантные многоярусные торты, которые станут центром вашего праздника
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Индивидуальный дизайн</li>
+                        <li>Натуральные ингредиенты</li>
+                        <li>Доставка и установка</li>
+                        <li>Дегустация перед заказом</li>
+                    </ul>
+                    <button class="service-card__btn">Заказать</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__header">
+                        
+                        <h3 class="service-card__title">Детские торты</h3>
+                        <p class="service-card__price">от 4 500 ₽</p>
+                    </div>
+                    <p class="service-card__description">
+                        Яркие и веселые торты для незабываемых детских праздников
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Тематическое оформление</li>
+                        <li>Без искусственных красителей</li>
+                        <li>Съедобные фигурки</li>
+                        <li>Любые персонажи</li>
+                    </ul>
+                    <button class="service-card__btn">Заказать</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__header">
+                     
+                        <h3 class="service-card__title">Капкейки</h3>
+                        <p class="service-card__price">от 200 ₽/шт</p>
+                    </div>
+                    <p class="service-card__description">
+                        Нежные кексы с разнообразными начинками и креативным декором
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Разные вкусы в одном наборе</li>
+                        <li>Индивидуальный декор</li>
+                        <li>Праздничная упаковка</li>
+                        <li>Минимальный заказ 6 шт</li>
+                    </ul>
+                    <button class="service-card__btn">Заказать</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__header">
+                    
+                        <h3 class="service-card__title">Кейк-попсы</h3>
+                        <p class="service-card__price">от 200 ₽/шт</p>
+                    </div>
+                    <p class="service-card__description">
+                        Мини-десерты на палочке - идеально для фуршета и подарков
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Разноцветная глазурь</li>
+                        <li>Праздничная упаковка</li>
+                        <li>Разные вкусы</li>
+                        <li>Минимальный заказ 10 шт</li>
+                    </ul>
+                    <button class="service-card__btn">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Процесс</span>
+                <h2 class="section__title">Как я работаю</h2>
+            </div>
+
+            <div class="process__steps">
+                <div class="process-step">
+                    <div class="step__number">01</div>
+                    <h3 class="step__title">Консультация</h3>
+                    <p class="step__description">
+                        Обсуждаем ваши пожелания, тему мероприятия и детали заказа
+                    </p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step__number">02</div>
+                    <h3 class="step__title">Дизайн</h3>
+                    <p class="step__description">
+                        Создаю эскиз десерта и согласовываю с вами все детали
+                    </p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step__number">03</div>
+                    <h3 class="step__title">Приготовление</h3>
+                    <p class="step__description">
+                        Готовлю десерт используя только лучшие натуральные ингредиенты
+                    </p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step__number">04</div>
+                    <h3 class="step__title">Доставка</h3>
+                    <p class="step__description">
+                        Аккуратно доставляю и при необходимости устанавливаю десерт
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact__content">
+                <div class="contact__info">
+                    <span class="section__label">Контакты</span>
+                    <h2 class="section__title">Обсудим детали?</h2>
+                    <p class="contact__description">
+                       "Авторский торт вашей мечты начинается здесь!"
+                    </p>
+                    
+                    <div class="contact__details">
+                        <div class="contact-item">
+                            <div class="contact-item__icon">📞</div>
+                            <div class="contact-item__content">
+                                <h4>Телефон</h4>
+                                <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">✉️</div>
+                            <div class="contact-item__content">
+                                <h4>Email</h4>
+                                <a href="mailto:hello@sweetart.ru">artchef.olga@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item__icon">📍</div>
+                            <div class="contact-item__content">
+                                <h4>Адрес</h4>
+                                <p>г. Москва, ул. Кондитерская, 15</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">🕒</div>
+                            <div class="contact-item__content">
+                                <h4>Время работы</h4>
+                                <p>Пн-Пт: 9:00-20:00</p>
+                                <p>Сб-Вс: 10:00-18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact__form">
+                    <form id="order-form" class="form">
+                        <h3 class="form__title">Оставить заявку</h3>
+                        
+                        <div class="form__group">
+                            <input type="text" id="name" class="form__input" placeholder="Ваше имя" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="tel" id="phone" class="form__input" placeholder="Телефон" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <select id="service" class="form__select" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="wedding">Свадебный торт</option>
+                                <option value="kids">Детский торт</option>
+                                <option value="cupcakes">Капкейки</option>
+                                <option value="cakepops">Кейк-попсы</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__group">
+                            <textarea id="message" class="form__textarea" placeholder="Детали заказа (дата, количество гостей, пожелания)" rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <span>Отправить заявку</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        
+                        <div class="form__success" id="form-success">
+                        Спасибо! Ваша заявка отправлена. Я свяжусь с вами в ближайшее время.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__main">
+                    <div class="footer__brand">
+                        <a href="#" class="footer__logo">
+                            Art Chef - Ольга Дудник
+                        </a>
+                        <p class="footer__description">
+                            "Создаю сладкие шедевры, которые дарят эмоции и остаются в памяти"
+                        </p>
+                    </div>
+                    
+                    <div class="footer__links">
+                        <div class="footer__column">
+                            <h4>Навигация</h4>
+                            <ul>
+                                <li><a href="#home">Главная</a></li>
+                                <li><a href="#about">Обо мне</a></li>
+                                <li><a href="#portfolio">Портфолио</a></li>
+                                <li><a href="#services">Услуги</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer__column">
+                            <h4>Услуги</h4>
+                          <ul>
+                             <li><a href="#services">Свадебные торты</a></li>
+                             <li><a href="#services">Детские торты</a></li>
+                             <li><a href="#services">Капкейки</a></li>
+                             <li><a href="#services"">Кейк-попсы</a></li>
+                         </ul>
+                        </div>
+                        
+                        <div class="footer__column">
+                            <h4>Контакты</h4>
+                            <ul>
+                                <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+                                <li><a href="mailto:hello@sweetart.ru">artchef.olga@gmail.com</a></li>
+                                <li><a href="https://t.me/artchef_olga" target="_blank">Telegram: @artchef_olga</a></li>
+        <li><a href="https://vk.com/artchef_olga" target="_blank">ВКонтакте: Art Chef Ольга</a></li>
+                                <li>Москва, ул. Кондитерская, 15</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer__bottom">
+                    <p>&copy; 2024 Sweet Art. Все права защищены.</p>
+                    <div class="footer__social">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
